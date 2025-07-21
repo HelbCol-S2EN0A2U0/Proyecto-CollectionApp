@@ -1,13 +1,15 @@
-// import mongoose from "mongoose";
 import dotenv from "dotenv";
 import express from "express"; // importamos el pqte express
+import cors from "cors";
+import bodyParser from "body-parser";
+// 2 .
+import mongoose from "mongoose";
+import connectDB from "./db.js";
+
 // import userRoutes from "./routes/users.js"; // importamos el archivo donde manejamos las routes del App>
 // import categoryRoutes from "./routes/categoryRoutes.js";
 // import markRoutes from "./routes/markRoutes.js";
 // import modelRoutes from "./routes/modelRoutes.js";
-// import connectDB from "./db.js";
-import cors from "cors";
-import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -41,7 +43,8 @@ app.use(cors(corsOptions));
 // const __dirname = path.dirname(__filename);
 // app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
-// connectDB();
+// 2.
+connectDB();
 
 //Ruta base del APIWEB, nuestro endpoint base
 app.get("/", (req, res) => {
