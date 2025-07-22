@@ -18,5 +18,12 @@
    4 - Bootstrap
    5 - JQuery
    6 - Git y GitHub
+   7 - Express
+   8 - Mongoose
+   9 - Axios
+   10- React Router
+   11- Multer
+   12- body-parser
+   13- dotenv
 ## Publicidad
 - Si necesita ayuda con su aplicación, o necesita construir una aplicación para su negocio por favor contactese a helberthr.rojas@hotmail.com
