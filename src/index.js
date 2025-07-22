@@ -46,7 +46,7 @@ app.use(cors(corsOptions));
 // 2.
 connectDB();
 
-//Ruta base del APIWEB, nuestro endpoint base
+// 1. Ruta base del APIWEB, nuestro endpoint base
 app.get("/", (req, res) => {
   res.send("<h1>Bienvenido a  COLLECTIONAPP v 1.0</h1>");
 });
