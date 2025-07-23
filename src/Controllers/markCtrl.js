@@ -149,9 +149,8 @@ export const deleteMark = [
 
       // 2. Eliminar imagen si existe
       if (marca.imagen) {
-        const rutaImagen = path.join(__dirname, "..", marca.imagen);
-
-        console.log(`RUTA de la imagen a eliminar ${rutaImagen}`);
+        const rutaRelativa = marca.imagen.replace(/\\/g, "/"); //cambiar backslashesPor slashes
+        console.log(`RUTA de la imagen a eliminar ${rutaRelativa}`);
 
         try {
           await fs.unlink(rutaImagen);

@@ -1,1 +1,38 @@
 https://github.com/HelbCol-S2EN0A2U0/Proyecto-CollectionApp.git
+etapas git 
+ dd -> stage ->commit ->Servidor
+
+
+
+git config --global user.name "correo"
+git config --global user.email nombreDeUsuario
+git config --global core.editor "code --await" //VSCode como editor por defecto
+git config --global core.autocrlf true   //windows       
+git config --global core.autocrlf input  //MAC
+git config -h //Manual de ayuda
+
+pwd      ---- para saber donde nos encontramos en el explorador
+ls       ---- listar contenido de un directorio
+ls -a    ---- listar contenido de un directorio incluidos los archivos ocultos
+mkdir    ---- Crear una nueva carpeta
+rm nombreArch2.ext ---- Borrar el archivo nombreArch2.ext
+
+git init ---- para comenzar el proyecto dentro de la carpeta donde nos encontremos ubicados
+git status ---- Muestra estado actual del repositorio
+git add nombreArchivo ---- Agregar del directorio de trabajo al stagging area 
+git add nombreArchivo.ext nombreArch2.ext nombreArch3.ext 
+git add . ---- Agregar todos los archivos recientes o modificados del DD al stagging area            MALA PRACTICA usar git add ..
+git commit -m "Titulo del commit actual"
+Borrar un archivo del
+	rm nombreArch2.ext ---- Borrar el archivo nombreArch2.ext
+	git add nombreArch2.ext ----Agregar/ Notificar cambio al area de stage
+	git commit "Borramos el archivo nombreArch2.ext"
+Tambien se puede hacer asi:
+	git rm nombreArch2.ext //ELIMINADO DE LA ETAPA DE STAGGING
+
+git checkout   ---- Devuelve a el commit definido como parametro
+git diff
+git log  ---- Muestra la lista de commits realizados en la rama donde nos encontremos
+git push ---- Pasar del repositorio local al repo de github
+
+
